@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-04-08T12:53:35.825Z",
+  "summary": {
+    "functional": false,
+    "responsive": false,
+    "performance": false
+  },
+  "details": {
+    "functional": {
+      "navigation": {
+        "success": false,
+        "failures": [
+          {
+            "page": "/",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/accounting",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/accounting/income-statement",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting/income-statement\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/valuation-principles",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/valuation-principles\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/intrinsic-valuation",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/intrinsic-valuation\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/relative-valuation",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/relative-valuation\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/mergers-acquisitions",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/mergers-acquisitions\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/leveraged-buyouts",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/leveraged-buyouts\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/market-dynamics",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/market-dynamics\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "page": "/behavioral-questions",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/behavioral-questions\", waiting until \"load\"\u001b[22m\n"
+          }
+        ]
+      },
+      "components": {
+        "success": false,
+        "failures": [
+          {
+            "component": "Quiz",
+            "page": "/accounting/income-statement",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting/income-statement\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "component": "Flashcard",
+            "page": "/valuation-principles/valuation-fundamentals",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/valuation-principles/valuation-fundamentals\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "component": "Financial Calculator",
+            "page": "/intrinsic-valuation/dcf-fundamentals",
+            "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/intrinsic-valuation/dcf-fundamentals\", waiting until \"load\"\u001b[22m\n"
+          }
+        ]
+      }
+    },
+    "responsive": {
+      "viewports": {
+        "mobile": {
+          "success": false,
+          "failures": [
+            {
+              "page": "/",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/accounting",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/behavioral-questions",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/behavioral-questions\", waiting until \"load\"\u001b[22m\n"
+            }
+          ]
+        },
+        "tablet": {
+          "success": false,
+          "failures": [
+            {
+              "page": "/",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/accounting",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/behavioral-questions",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/behavioral-questions\", waiting until \"load\"\u001b[22m\n"
+            }
+          ]
+        },
+        "desktop": {
+          "success": false,
+          "failures": [
+            {
+              "page": "/",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/accounting",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting\", waiting until \"load\"\u001b[22m\n"
+            },
+            {
+              "page": "/behavioral-questions",
+              "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/behavioral-questions\", waiting until \"load\"\u001b[22m\n"
+            }
+          ]
+        }
+      }
+    },
+    "performance": {
+      "pages": {
+        "Home": {
+          "path": "/",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+          "success": false
+        },
+        "Content Page": {
+          "path": "/accounting/income-statement",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/accounting/income-statement\", waiting until \"load\"\u001b[22m\n",
+          "success": false
+        },
+        "Interactive Page": {
+          "path": "/behavioral-questions/tell-me-about-yourself",
+          "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/behavioral-questions/tell-me-about-yourself\", waiting until \"load\"\u001b[22m\n",
+          "success": false
+        }
+      }
+    }
+  }
+}

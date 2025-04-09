@@ -1,0 +1,160 @@
+// User Flow Diagrams for Investment Banking Interview Prep Website
+
+// This file contains the user flow diagrams for the main user journeys through the website.
+// These diagrams help visualize how users will navigate through the platform and interact
+// with different features.
+
+// Main Learning Path
+digraph MainLearningPath {
+  // Node styling
+  node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Start point
+  start [label="Homepage", shape=oval];
+  
+  // Main flow
+  bucket [label="Knowledge Bucket\nLanding Page"];
+  submodule [label="Sub-Module Page"];
+  concept [label="Concept Explanation"];
+  practice [label="Practice Questions"];
+  quiz [label="Knowledge Check Quiz"];
+  next_submodule [label="Next Sub-Module"];
+  
+  // Connections
+  start -> bucket [label="Select knowledge bucket"];
+  bucket -> submodule [label="Select sub-module"];
+  submodule -> concept [label="Read content"];
+  concept -> practice [label="Try practice questions"];
+  practice -> quiz [label="Take quiz"];
+  quiz -> next_submodule [label="Continue to next"];
+  next_submodule -> bucket [label="Return to bucket\noverview", style=dashed];
+  
+  // Alternative paths
+  practice -> concept [label="Review concepts", style=dashed];
+  quiz -> practice [label="Review questions", style=dashed];
+}
+
+// Practice Session Flow
+digraph PracticeSessionFlow {
+  // Node styling
+  node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Start point
+  start [label="Homepage", shape=oval];
+  
+  // Main flow
+  practice_hub [label="Practice Hub"];
+  filter_questions [label="Filter Questions"];
+  question_page [label="Individual Question"];
+  hint [label="View Hint"];
+  solution [label="Reveal Solution"];
+  related [label="Related Questions"];
+  next_question [label="Next Question"];
+  
+  // Connections
+  start -> practice_hub [label="Go to Practice"];
+  practice_hub -> filter_questions [label="Select filters"];
+  filter_questions -> question_page [label="Select question"];
+  question_page -> hint [label="Need help"];
+  hint -> solution [label="Still stuck"];
+  question_page -> solution [label="Check answer"];
+  solution -> related [label="Explore related"];
+  solution -> next_question [label="Continue"];
+  next_question -> question_page [label="Loop"];
+  
+  // Alternative paths
+  question_page -> practice_hub [label="Return to list", style=dashed];
+  related -> question_page [label="Select related\nquestion", style=dashed];
+}
+
+// Interactive Tool Flow
+digraph InteractiveToolFlow {
+  // Node styling
+  node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Start point
+  start [label="Sub-Module Page", shape=oval];
+  
+  // Main flow
+  tool_intro [label="Tool Introduction"];
+  input_parameters [label="Input Parameters"];
+  calculate [label="Calculate Results"];
+  view_results [label="View Results"];
+  adjust_parameters [label="Adjust Parameters"];
+  save_results [label="Save/Export Results"];
+  
+  // Connections
+  start -> tool_intro [label="Launch tool"];
+  tool_intro -> input_parameters [label="Set up calculation"];
+  input_parameters -> calculate [label="Run calculation"];
+  calculate -> view_results [label="See output"];
+  view_results -> adjust_parameters [label="Modify inputs"];
+  adjust_parameters -> calculate [label="Recalculate"];
+  view_results -> save_results [label="Export"];
+  
+  // Alternative paths
+  view_results -> start [label="Return to content", style=dashed];
+  save_results -> start [label="Continue learning", style=dashed];
+}
+
+// Search and Discovery Flow
+digraph SearchFlow {
+  // Node styling
+  node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Start point
+  start [label="Any Page", shape=oval];
+  
+  // Main flow
+  search_input [label="Search Input"];
+  search_results [label="Search Results"];
+  filter_results [label="Filter Results"];
+  content_page [label="Content Page"];
+  related_content [label="Related Content"];
+  
+  // Connections
+  start -> search_input [label="Enter search term"];
+  search_input -> search_results [label="View results"];
+  search_results -> filter_results [label="Apply filters"];
+  filter_results -> search_results [label="Refined results"];
+  search_results -> content_page [label="Select result"];
+  content_page -> related_content [label="Explore related"];
+  
+  // Alternative paths
+  content_page -> search_results [label="Back to results", style=dashed];
+  related_content -> content_page [label="View related item", style=dashed];
+}
+
+// Mobile User Flow Considerations
+digraph MobileUserFlow {
+  // Node styling
+  node [shape=box, style=rounded, fontname="Arial", fontsize=12];
+  edge [fontname="Arial", fontsize=10];
+  
+  // Start point
+  start [label="Mobile Homepage", shape=oval];
+  
+  // Main flow
+  menu [label="Hamburger Menu"];
+  bucket_list [label="Knowledge Buckets"];
+  bucket_detail [label="Bucket Detail"];
+  content_view [label="Content View"];
+  bottom_nav [label="Bottom Navigation"];
+  next_prev [label="Next/Previous"];
+  
+  // Connections
+  start -> menu [label="Open menu"];
+  menu -> bucket_list [label="Select section"];
+  bucket_list -> bucket_detail [label="View bucket"];
+  bucket_detail -> content_view [label="Read content"];
+  content_view -> bottom_nav [label="Navigate"];
+  bottom_nav -> next_prev [label="Move between\nsections"];
+  
+  // Alternative paths
+  content_view -> menu [label="Change section", style=dashed];
+  next_prev -> content_view [label="Continue reading", style=dashed];
+}
