@@ -6,10 +6,10 @@ import financialStatementAnalysisContent from '../../content/accounting/financia
 
 export default function FinancialStatementAnalysis() {
   const moduleData = {
-    title: "Financial Statement Analysis",
-    bucket: "Accounting",
-    bucketSlug: "accounting",
-    overview: "Financial Statement Analysis examines a company's financial statements to gain insights into its financial health, operational performance, and strategic position.",
+    title: 'Financial Statement Analysis',
+    bucket: 'Accounting',
+    bucketSlug: 'accounting',
+    overview: 'Learn comprehensive approaches to analyzing financial statements for valuation, risk assessment, and investment banking interviews.',
     content: financialStatementAnalysisContent()
   };
 
@@ -17,9 +17,8 @@ export default function FinancialStatementAnalysis() {
     <Layout>
       <Head>
         <title>Financial Statement Analysis | Investment Banking Interview Prep</title>
-        <meta name="description" content="Master financial statement analysis for investment banking interviews" />
+        <meta name="description" content="Master financial statement analysis techniques including trend, common-size, ratio, and cash flow analysis for investment banking interviews." />
       </Head>
-      
       <SubModuleTemplate moduleData={moduleData} />
     </Layout>
   );

@@ -14,10 +14,22 @@ const Sidebar = ({ title, currentModule, bucketSlug }) => {
           { id: 'income-statement', title: 'Income Statement' },
           { id: 'balance-sheet', title: 'Balance Sheet' },
           { id: 'cash-flow-statement', title: 'Cash Flow Statement' },
+          { id: 'linking-the-three-statements', title: 'Linking the Three Statements' },
           { id: 'financial-ratios', title: 'Financial Ratios' },
           { id: 'accounting-principles', title: 'Accounting Principles' },
+          { id: 'revenue-recognition', title: 'Revenue Recognition' },
           { id: 'financial-statement-analysis', title: 'Financial Statement Analysis' },
           { id: 'working-capital', title: 'Working Capital' },
+          { id: 'understanding-depreciation-and-amortization', title: 'Understanding Depreciation and Amortization' },
+          { id: 'inventory-accounting', title: 'Inventory Accounting (LIFO, FIFO)' },
+          { id: 'capitalization-vs-expensing', title: 'Capitalization vs. Expensing' },
+          { id: 'goodwill-and-intangible-assets', title: 'Goodwill and Intangible Assets' },
+          { id: 'deferred-taxes', title: 'Deferred Taxes' },
+          { id: 'lease-accounting', title: 'Lease Accounting' },
+          { id: 'equity-method-accounting', title: 'Equity Method Accounting' },
+          { id: 'stockholders-equity', title: 'Stockholders\' Equity' },
+          { id: 'impact-of-transactions', title: 'The Impact of Transactions on Financial Statements' },
+          { id: 'net-operating-losses', title: 'Net Operating Losses (NOLs) and Tax Considerations' },
           { id: 'advanced-accounting-topics', title: 'Advanced Accounting Topics' }
         ];
       case 'valuation-principles':
@@ -107,7 +119,28 @@ const Sidebar = ({ title, currentModule, bucketSlug }) => {
   // Function to check if a module page exists
   const moduleExists = (bucketId, moduleId) => {
     // For Buckets 1-6, we know which modules are implemented
-    if (bucketId === 'accounting' && (moduleId === 'income-statement' || moduleId === 'balance-sheet')) {
+    if (bucketId === 'accounting' && (
+      moduleId === 'income-statement' ||
+      moduleId === 'balance-sheet' ||
+      moduleId === 'cash-flow-statement' ||
+      moduleId === 'linking-the-three-statements' ||
+      moduleId === 'financial-ratios' ||
+      moduleId === 'accounting-principles' ||
+      moduleId === 'revenue-recognition' ||
+      moduleId === 'financial-statement-analysis' ||
+      moduleId === 'working-capital' ||
+      moduleId === 'understanding-depreciation-and-amortization' ||
+      moduleId === 'inventory-accounting' ||
+      moduleId === 'capitalization-vs-expensing' ||
+      moduleId === 'goodwill-and-intangible-assets' ||
+      moduleId === 'deferred-taxes' ||
+      moduleId === 'lease-accounting' ||
+      moduleId === 'equity-method-accounting' ||
+      moduleId === 'stockholders-equity' ||
+      moduleId === 'impact-of-transactions' ||
+      moduleId === 'net-operating-losses' ||
+      moduleId === 'advanced-accounting-topics'
+    )) {
       return true;
     } else if (bucketId === 'valuation-principles' && moduleId === 'valuation-fundamentals') {
       return true;

@@ -15,7 +15,28 @@ const BucketTemplate = ({ bucket }) => {
   // This will be used client-side only
   const moduleExists = (bucketId, moduleId) => {
     // For Buckets 1-6, we know which modules are implemented
-    if (bucketId === 'accounting' && (moduleId === 'income-statement' || moduleId === 'balance-sheet')) {
+    if (bucketId === 'accounting' && (
+      moduleId === 'income-statement' ||
+      moduleId === 'balance-sheet' ||
+      moduleId === 'cash-flow-statement' ||
+      moduleId === 'linking-the-three-statements' ||
+      moduleId === 'financial-ratios' ||
+      moduleId === 'accounting-principles' ||
+      moduleId === 'revenue-recognition' ||
+      moduleId === 'financial-statement-analysis' ||
+      moduleId === 'working-capital' ||
+      moduleId === 'understanding-depreciation-and-amortization' ||
+      moduleId === 'inventory-accounting' ||
+      moduleId === 'capitalization-vs-expensing' ||
+      moduleId === 'goodwill-and-intangible-assets' ||
+      moduleId === 'deferred-taxes' ||
+      moduleId === 'lease-accounting' ||
+      moduleId === 'equity-method-accounting' ||
+      moduleId === 'stockholders-equity' ||
+      moduleId === 'impact-of-transactions' ||
+      moduleId === 'net-operating-losses' ||
+      moduleId === 'advanced-accounting-topics'
+    )) {
       return true;
     } else if (bucketId === 'valuation-principles' && moduleId === 'valuation-fundamentals') {
       return true;
